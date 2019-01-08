@@ -39,11 +39,12 @@
 
 function printForms(){
   let x = document.getElementById("infoButton");
-  console.log(x.style.display)
+  let bookBut = document.getElementById("bookBut");
   if (x.style.display === "none"){
     x.style.display = "block";
+    bookBut.disabled = true;
+    bookBut.style.backgroundColor = "darkblue";
   }else{
-    console.log('non')
     x.style.display = "none";
   }
 }
