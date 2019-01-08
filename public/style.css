@@ -1,0 +1,16 @@
+.toppage{
+    height: 60px;
+    background-image: url("pictures/grey-back.jpg");
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+}
+
+body{
+    background-color: #303030;
+}
+
+.bodypage{
+    margin: 50px;
+}
+

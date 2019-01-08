@@ -2,9 +2,52 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <div id="bar">
+  
+    <div class="container-fluid toppage">
+      <h1>Book Your Bar</h1>
+    </div>
+
+    <div class="container-fluid bodypage">
+        <div class="container">
+            <div class="alert alert-primary" role="alert">
+                Fill bar information!
+            </div>
+            <div class="row" id="bar">
+    
+                <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 name" type="text" placeholder="Bar name"/>
+                <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 price-by-hour" type="number" placeholder="Price by hour"/>
+                <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 price-by-person" type="number" placeholder="Price by person"/>
+            </div>
+    
+          <div class="alert alert-secondary" role="alert">
+              Fill booker information!
+              <div class="row" id="booker">
+            
+                  <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 name" type="text" placeholder="Booker name"/>
+                  <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 time" type="number" placeholder="Time in h"/>
+                  <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 persons" type="number" placeholder="Persons"/>
+                  <input class="option" type="checkbox" placeholder="Deductible option">Deductible option</div>
+                  
+              </div>
+          </div>
+    </div>
+
+    
+      
+      
+      
+      
+      <button type="button" class="btn btn-dark" id="compute">Compute</button>
+      <div id="actors"></div>
+    </div>
+
+
+    
+    <!--<div id="bar">
       <input class="name" type="text" placeholder="Bar name"/>
       <input class="price-by-hour" type="number" placeholder="Price by hour"/>
       <input class="price-by-person" type="number" placeholder="Price by person"/>
@@ -13,11 +56,16 @@
       <input class="name" type="text" placeholder="Booker name"/>
       <input class="time" type="number" placeholder="Time in h"/>
       <input class="persons" type="number" placeholder="Persons"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
+    <input class="option" type="checkbox" placeholder="Deductible option"/>
     <button id="compute">Compute</button>
-    <div id="actors"></div>
+    <div id="actors"></div>-->
+    
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
   </body>
 </html>
