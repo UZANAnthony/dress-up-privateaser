@@ -14,20 +14,66 @@
     </div>
 
     <div class="container">
-      <button type="button" class="btn btn btn-primary btn-lg btn-block" onclick="printForms()" id="bookBut">Book now !</button>
+      <button type="button" class="btn btn btn-primary btn-lg btn-block" onclick="printButtForms()" id="bookBut">Book now !</button>
 
-      <div class="col-md-2">
-        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons" id="infoButton" style="display:none">
-          <label class="btn btn-secondary active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked> Bar info
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option2" autocomplete="off"> Booker info
-          </label>
+      <div class="row">
+      
+        <div class="col-md-2">
+          <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons" id="infoButton" style="display:none">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked onfocus="printBarForm()"> Bar info
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Booker info
+            </label>
+          </div>
         </div>
+
+        <div class="col-md-10">
+          <form>
+            <div class="form-group">
+              <label>Bar name</label>
+              <input type="text" class="form-control name" placeholder="Enter bar name">
+            </div>
+            <div class="form-group">
+              <label>Price by hour</label>
+              <input type="number" class="form-control price-by-hour" placeholder="Price by hour">
+            </div>
+            <div class="form-group">
+              <label>Price by person</label>
+              <input type="number" class="form-control price-by-person" placeholder="Price by person">
+            </div>
+          </form>
+      
+          <form>
+            <div class="form-group">
+              <label>Booker name</label>
+              <input type="text" class="form-control name" placeholder="Enter booker name">
+            </div>
+            <div class="form-group">
+              <label>Time in hour</label>
+              <input type="number" class="form-control time" placeholder="Enter number">
+            </div>
+            <div class="form-group">
+              <label>Number of person</label>
+              <input type="number" class="form-control persons" placeholder="Enter number">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label option">Deductible option</label>
+            </div>
+          </form>
+        </div>
+
       </div>
 
+
+
     </div>
+
+    
+
+      
 
 
     

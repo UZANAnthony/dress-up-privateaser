@@ -37,7 +37,7 @@
 })();
 
 
-function printForms(){
+function printButtForms(){
   let x = document.getElementById("infoButton");
   let bookBut = document.getElementById("bookBut");
   if (x.style.display === "none"){
