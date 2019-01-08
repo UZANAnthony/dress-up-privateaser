@@ -3,11 +3,13 @@
     background-image: url("pictures/grey-back.jpg");
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: whitesmoke;
+	color: whitesmoke;
+	margin-bottom: 50px;
 }
 
+
 body{
-    background-color: #303030;
+    background-color: #cecece;
 }
 
 .bodypage{
