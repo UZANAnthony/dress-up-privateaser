@@ -15,12 +15,22 @@
 
     <div class="container">
       <button type="button" class="btn btn btn-primary btn-lg btn-block" onclick="printForms()" id="bookBut">Book now !</button>
+
+      <div class="col-md-2">
+        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons" id="infoButton" style="display:none">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> Bar info
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Booker info
+          </label>
+        </div>
+      </div>
+
     </div>
 
-    <div class="btn-group" role="group" aria-label="Basic example" id="infoButton" style="display:none">
-      <button type="button" class="btn btn-secondary">Bar info</button>
-      <button type="button" class="btn btn-secondary">Booker info</button>
-    </div>
+
+    
     
     
     
