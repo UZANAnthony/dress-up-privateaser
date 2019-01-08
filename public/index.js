@@ -39,9 +39,11 @@
 
 function printForms(){
   let x = document.getElementById("infoButton");
+  console.log(x.style.display)
   if (x.style.display === "none"){
     x.style.display = "block";
   }else{
+    console.log('non')
     x.style.display = "none";
   }
 }
