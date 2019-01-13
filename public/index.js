@@ -40,6 +40,8 @@
 function printButtForms(){
   let x = document.getElementById("infoButton")
   let bookBut = document.getElementById("bookBut")
+  document.getElementById("cancel").disabled = false
+
   if (x.style.display === "none"){
     x.style.display = "block"
     bookBut.disabled = true
@@ -66,4 +68,22 @@ function printBookerForm(){
 function printResult(){
   let res = document.getElementById("res")
   res.style.display = "block"
+}
+
+function cancelAll(){
+  let form1 = document.getElementById("bar")
+  let form2 = document.getElementById("booker")
+  let bookBut = document.getElementById("bookBut")
+
+  bookBut.style.backgroundColor = "#007bff"
+  bookBut.disabled = false
+
+  document.getElementById("infoButton").style.display = "none"
+
+  form1.style.display = "none"
+  form1.reset()
+  form2.style.display = "none"
+  form2.reset()
+
+  document.getElementById("cancel").disabled = true
 }
