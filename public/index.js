@@ -62,3 +62,8 @@ function printBookerForm(){
   form1.style.display = "none"
   form2.style.display = "block"
 }
+
+function printResult(){
+  let res = document.getElementById("res")
+  res.style.display = "block"
+}
