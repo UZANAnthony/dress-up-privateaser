@@ -30,33 +30,33 @@
         </div>
 
         <div class="col-md-10">
-          <form id="bar" style="display:none">
+          <form id="bar" name="bar" style="display:none">
             <div class="form-group">
               <label>Bar name</label>
-              <input type="text" class="form-control name" placeholder="Enter bar name">
+              <input id="barname" name="barname" type="text" class="form-control name" placeholder="Enter bar name">
             </div>
             <div class="form-group">
               <label>Price by hour</label>
-              <input type="number" class="form-control price-by-hour" placeholder="Price by hour">
+              <input id="barpriceh" name="barpriceh" type="number" class="form-control price-by-hour" placeholder="Price by hour">
             </div>
             <div class="form-group">
               <label>Price by person</label>
-              <input type="number" class="form-control price-by-person" placeholder="Price by person">
+              <input id="barpricep" name="barpricep" type="number" class="form-control price-by-person" placeholder="Price by person">
             </div>
           </form>
       
           <form id="booker" style="display:none">
             <div class="form-group">
               <label>Booker name</label>
-              <input type="text" class="form-control name" placeholder="Enter booker name">
+              <input id="bookname" name="bookname" type="text" class="form-control name" placeholder="Enter booker name">
             </div>
             <div class="form-group">
               <label>Time in hour</label>
-              <input type="number" class="form-control time" placeholder="Enter number">
+              <input id="bookh" name="bookh" type="number" class="form-control time" placeholder="Enter number">
             </div>
             <div class="form-group">
               <label>Number of person</label>
-              <input type="number" class="form-control persons" placeholder="Enter number">
+              <input id="bookp" name="bookp" type="number" class="form-control persons" placeholder="Enter number">
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input">
@@ -67,7 +67,31 @@
 
       </div>
 
-      <button id="compute" disabled>Compute</button>
+
+      <script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
+      <script type='text/javascript'>
+        $(document).ready(function(){
+          $("#compute").attr('disabled', 'disabled');
+          $("form").keyup(function(){
+            $("#compute").attr('disabled', 'disabled');
+            let barname = $("#barname").val();
+            let barpriceh = $("#barpriceh").val();
+            let barpricep = $("#barpricep").val();
+            let bookname = $("#bookname").val();
+            let bookh = $("#bookh").val();
+            let bookp = $("#bookp").val();
+            if(!(barname==="" || barpriceh==="" || barpricep==="" || bookname==="" || bookh==="" || bookp==="")){
+              $("#compute").removeAttr('disabled');
+            }
+          })
+        })
+      </script>
+      
+      <button id='compute' disabled='disabled'>Compute</button>
+
+
+      
+
       <div id="actors"></div>
 
     </div>
@@ -125,6 +149,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  
+    
   </body>
 </html>
