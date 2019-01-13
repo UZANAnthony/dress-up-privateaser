@@ -21,16 +21,16 @@
         <div class="col-md-2">
           <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons" id="infoButton" style="display:none">
             <label class="btn btn-secondary active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked onfocus="printBarForm()"> Bar info
+              <input type="radio" name="options" id="option1" autocomplete="off" checked onfocus = "printBarForm()"> Bar info
             </label>
             <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Booker info
+              <input type="radio" name="options" id="option2" autocomplete="off" onfocus="printBookerForm()"> Booker info
             </label>
           </div>
         </div>
 
         <div class="col-md-10">
-          <form id="bar">
+          <form id="bar" style="display:none">
             <div class="form-group">
               <label>Bar name</label>
               <input type="text" class="form-control name" placeholder="Enter bar name">
@@ -45,7 +45,7 @@
             </div>
           </form>
       
-          <form id="booker">
+          <form id="booker" style="display:none">
             <div class="form-group">
               <label>Booker name</label>
               <input type="text" class="form-control name" placeholder="Enter booker name">
@@ -67,7 +67,7 @@
 
       </div>
 
-      <button id="compute">Compute</button>
+      <button id="compute" disabled>Compute</button>
       <div id="actors"></div>
 
     </div>

@@ -38,13 +38,27 @@
 
 
 function printButtForms(){
-  let x = document.getElementById("infoButton");
-  let bookBut = document.getElementById("bookBut");
+  let x = document.getElementById("infoButton")
+  let bookBut = document.getElementById("bookBut")
   if (x.style.display === "none"){
-    x.style.display = "block";
-    bookBut.disabled = true;
-    bookBut.style.backgroundColor = "darkblue";
+    x.style.display = "block"
+    bookBut.disabled = true
+    bookBut.style.backgroundColor = "darkblue"
   }else{
-    x.style.display = "none";
+    x.style.display = "none"
   }
+}
+
+function printBarForm(){
+  let form1 = document.getElementById("bar")
+  let form2 = document.getElementById("booker")
+  form1.style.display = "block"
+  form2.style.display = "none"
+}
+
+function printBookerForm(){
+  let form1 = document.getElementById("bar")
+  let form2 = document.getElementById("booker")
+  form1.style.display = "none"
+  form2.style.display = "block"
 }
