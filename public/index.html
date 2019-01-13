@@ -17,7 +17,6 @@
       <button type="button" class="btn btn btn-primary btn-lg btn-block" onclick="printButtForms()" id="bookBut">Book now !</button>
 
       <div class="row">
-      
         <div class="col-md-2">
           <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons" id="infoButton" style="display:none">
             <label class="btn btn-secondary active">
@@ -67,7 +66,6 @@
 
       </div>
 
-
       <script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
       <script type='text/javascript'>
         $(document).ready(function(){
@@ -86,9 +84,9 @@
           })
         })
       </script>
-      
-      <button id='compute' disabled='disabled' onclick="printResult()">Compute</button>
-      <button id='cancel' disabled onclick="cancelAll()">Cancel</button>
+
+      <button id='compute' disabled='disabled' onclick="printResult()" type="button" class="btn btn-success">Compute</button>
+      <button id='cancel' disabled onclick="cancelAll()" type="button" class="btn btn-danger">Cancel</button>
 
       <div id="res" class="alert alert-success" role="alert" style="display:none">
         <h4 class="alert-heading">Booking done!</h4>
@@ -97,58 +95,10 @@
         <p class="mb-0" id="actors"></p>
       </div>
 
-      <button id='newBooking' style="display:none" onclick="newBooking()">New booking</button>
+      <button id='newBooking' style="display:none" onclick="newBooking()" type="button" class="btn btn-warning">New booking</button>
       
-
     </div>
 
-    
-
-    
-    
-
-    <!--<div class="container-fluid bodypage">
-        <div class="container">
-            <div class="alert alert-primary" role="alert">
-                Fill bar information!
-            </div>
-            <div class="row" id="bar">
-    
-                <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 name" type="text" placeholder="Bar name"/>
-                <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 price-by-hour" type="number" placeholder="Price by hour"/>
-                <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 price-by-person" type="number" placeholder="Price by person"/>
-            </div>
-    
-          <div class="alert alert-secondary" role="alert">
-              Fill booker information!
-              <div class="row" id="booker">
-            
-                  <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 name" type="text" placeholder="Booker name"/>
-                  <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 time" type="number" placeholder="Time in h"/>
-                  <input class="col-xs-12 col-sm-12 col-md-4 col-lg-4 persons" type="number" placeholder="Persons"/>
-                  <input class="option" type="checkbox" placeholder="Deductible option">Deductible option</div>
-                  
-              </div>
-          </div>
-    </div>
-
-      <button type="button" class="btn btn-dark" id="compute">Compute</button>
-      <div id="actors"></div>
-    </div>-->
-   
-    <!--<div id="bar">
-      <input class="name" type="text" placeholder="Bar name"/>
-      <input class="price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="name" type="text" placeholder="Booker name"/>
-      <input class="time" type="number" placeholder="Time in h"/>
-      <input class="persons" type="number" placeholder="Persons"/>
-    </div>
-    <input class="option" type="checkbox" placeholder="Deductible option"/>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>-->
     
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
