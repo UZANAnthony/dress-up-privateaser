@@ -69,6 +69,7 @@ function printResult(){
   let res = document.getElementById("res")
   res.style.display = "block"
   document.getElementById("cancel").disabled = true
+  document.getElementById("newBooking").style.display = "block"
 }
 
 function cancelAll(){
@@ -89,4 +90,25 @@ function cancelAll(){
   document.getElementById("res").style.display = "none"
 
   document.getElementById("cancel").disabled = true
+}
+
+function newBooking(){
+  let form1 = document.getElementById("bar")
+  let form2 = document.getElementById("booker")
+  let bookBut = document.getElementById("bookBut")
+
+  bookBut.style.backgroundColor = "#007bff"
+  bookBut.disabled = false
+
+  document.getElementById("infoButton").style.display = "none"
+
+  form1.style.display = "none"
+  form1.reset()
+  form2.style.display = "none"
+  form2.reset()
+
+  document.getElementById("res").style.display = "none"
+  document.getElementById("newBooking").style.display = "none"
+
+  document.getElementById("compute").disabled = true
 }
