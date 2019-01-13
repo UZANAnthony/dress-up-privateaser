@@ -68,6 +68,7 @@ function printBookerForm(){
 function printResult(){
   let res = document.getElementById("res")
   res.style.display = "block"
+  document.getElementById("cancel").disabled = true
 }
 
 function cancelAll(){
@@ -84,6 +85,8 @@ function cancelAll(){
   form1.reset()
   form2.style.display = "none"
   form2.reset()
+
+  document.getElementById("res").style.display = "none"
 
   document.getElementById("cancel").disabled = true
 }
