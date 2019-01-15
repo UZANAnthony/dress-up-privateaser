@@ -46,6 +46,7 @@ function printButtForms(){
     x.style.display = "block"
     bookBut.disabled = true
     bookBut.style.backgroundColor = "darkblue"
+    document.getElementById("bar").style.display = "block"
   }else{
     x.style.display = "none"
   }
